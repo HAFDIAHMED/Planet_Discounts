@@ -1,0 +1,40 @@
+  {
+  "project_info": {
+    "project_number": "919809165053",
+    "firebase_url": "https://semilanc-ab52f.firebaseio.com",
+    "project_id": "semilanc-ab52f",
+    "storage_bucket": "semilanc-ab52f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919809165053:android:241fe631e8dd295de12094",
+        "android_client_info": {
+          "package_name": "com.example.MYAPP"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919809165053-28i5dgb3g3pl57hbcpi6mbdjeb6cvr1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_g7vvpXjRkZYkbz1qMwNELSOQACX3em4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919809165053-28i5dgb3g3pl57hbcpi6mbdjeb6cvr1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
