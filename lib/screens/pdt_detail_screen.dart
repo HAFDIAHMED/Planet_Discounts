@@ -69,11 +69,11 @@ class DetailPage extends StatelessWidget {
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         color: Color(0xFF565656))),
-                /*Text(loadedPdt.name,
+                Text(loadedPdt.name,
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        color: Color(0xFFfd0100))),*/
+                        color: Colors.orange)),
                 Icon(
                   Icons.arrow_forward_ios,
                   color: Color(0xFF999999),
@@ -90,12 +90,12 @@ class DetailPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Prox".toUpperCase(),
+                Text("Prix".toUpperCase(),
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         color: Color(0xFF565656))),
-                Text("\DH${loadedPdt.price}".toUpperCase(),
+                Text("\$${loadedPdt.price} DH".toUpperCase(),
                     style: TextStyle(
                         color: Colors.orange,
                         //fontFamily: 'Roboto-Light.ttf',

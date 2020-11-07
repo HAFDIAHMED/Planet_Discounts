@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: Image.asset(
             'assets/images/planetdiscountslogo.png',
-            width: 90,
+            width: 100,
           ),
           actions: <Widget>[
             IconButton(
