@@ -57,11 +57,12 @@ flutter:
   assets:
      - assets/images/promotion__one.png
      - assets/images/promotion_two.png
-     - assets/images/promotion_three.png
-     - assets/images/ic_app_icon.png
+     - assets/images/promotion_three.png 
      - assets/icons/icons8-manicure.png
      - assets/icons/icons8-face-powder-100.png
      - assets/icons/icons8-comb-100.png
+     - assets/images/insta.png
+     - assets/images/facebook.jpg
 
 
   # To add assets to your application, add an assets section, like this:

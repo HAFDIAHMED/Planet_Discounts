@@ -24,31 +24,31 @@ class _DrawerWidgetState extends State<DrawerWidget> {
             _createDrawerHeader(),
             _createDrawerItem(
                 icon: Icons.home,
-                text: 'Home',
+                text: 'Acceuil',
                 onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SEMILAC()),
                     )),
             _createDrawerItem(
-                icon: FontAwesomeIcons.user,
-                text: 'Sign In',
+                icon: Icons.category,
+                text: 'Catégories',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SingUp()),
+                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                    )),
+            _createDrawerItem(
+                icon: FontAwesomeIcons.productHunt,
+                text: 'Produits',
+                onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SEMILAC()),
                     )),
             _createDrawerItem(
                 icon: Icons.shopping_basket,
-                text: 'My Cart ',
+                text: 'Mon Panier',
                 onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => CartScreen()),
-                    )),
-            _createDrawerItem(
-                icon: Icons.notifications_active,
-                text: 'Notifications',
-                onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Notifications()),
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
@@ -58,19 +58,47 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                       MaterialPageRoute(builder: (context) => SEMILAC()),
                     )),
             _createDrawerItem(
-                icon: Icons.card_giftcard,
-                text: 'Fidélité',
-                onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
-                    )),
-            _createDrawerItem(
                 icon: Icons.call,
-                text: 'Contact Us',
+                text: 'Contact',
                 onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => Contact()),
                     )),
+            Center(
+              child: Wrap(
+                direction: Axis.horizontal,
+                children: <Widget>[
+                  ButtonTheme(
+                    //minWidth: 40.0,
+                    child: RaisedButton(
+                      color: Colors.white,
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Contact()),
+                      ),
+                      child: Image.asset(
+                        'assets/images/facebook.jpg',
+                        width: 30,
+                      ),
+                    ),
+                  ),
+                  ButtonTheme(
+                    //minWidth: 40.0,
+                    child: RaisedButton(
+                      color: Colors.white,
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Contact()),
+                      ),
+                      child: Image.asset(
+                        'assets/images/insta.png',
+                        width: 30,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -98,7 +126,7 @@ Widget _createDrawerHeader() {
         Positioned(
             bottom: 12.0,
             left: 16.0,
-            child: Text("Developed  by SEMILAC'",
+            child: Text("Developed  by PlanetDiscount",
                 style: TextStyle(
                     color: Color(0xFF545454),
                     fontSize: 10.0,

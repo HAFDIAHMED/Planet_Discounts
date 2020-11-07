@@ -26,32 +26,6 @@ class HomePage extends StatelessWidget {
                 ),
                 onPressed: () =>
                     Navigator.of(context).pushNamed(CartScreen.routeName)),
-            IconButton(
-              icon: Icon(
-                Icons.card_giftcard,
-                color: Colors.purple,
-                size: 30,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SingUp()),
-                );
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                Icons.branding_watermark,
-                color: Colors.orange,
-                size: 30,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SingUp()),
-                );
-              },
-            ),
           ],
         ),
         body: HomeBody());

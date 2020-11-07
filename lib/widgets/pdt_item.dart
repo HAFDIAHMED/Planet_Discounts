@@ -49,15 +49,18 @@ class PdtItem extends StatelessWidget {
                 footer: GridTileBar(
                   title: Text(name),
                   trailing: IconButton(
-                      icon: Icon(Icons.add_shopping_cart),
+                      icon: Icon(
+                        Icons.add_shopping_cart,
+                        color: Colors.black,
+                      ),
                       onPressed: () {
                         Scaffold.of(context).showSnackBar(SnackBar(
                           duration: Duration(seconds: 3),
-                          content: Text('Item Added to Cart'),
+                          content: Text('produit ajouté au panier'),
                         ));
                         cart.addItem(pdt.id, pdt.name, pdt.price);
                       }),
-                  backgroundColor: Colors.pink,
+                  backgroundColor: Colors.orange,
                 )),
           ),
         ));

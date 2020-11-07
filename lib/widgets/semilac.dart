@@ -25,8 +25,9 @@ class SEMILAC extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'SEMILANC',
-        theme: ThemeData(primaryColor: Colors.pink, accentColor: Colors.black),
+        title: 'PlanetDiscount',
+        theme:
+            ThemeData(primaryColor: Colors.orange, accentColor: Colors.black),
         home: HomePage(),
         routes: {
           DetailPage.routeName: (ctx) => DetailPage(),

@@ -70,7 +70,7 @@ class _CheckoutButtonState extends State<CheckoutButton> {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      child: Text('Checkout'),
+      child: Text('Payer'),
       onPressed: widget.cart.totalAmount <= 0
           ? null
           : () async {

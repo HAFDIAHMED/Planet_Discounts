@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         //appBar: AppBar(title: const Text(_title)),
-        body: MyStatelessWidget(),
+        body: SEMILAC(),
       ),
     );
   }
@@ -47,7 +47,7 @@ class MyStatelessWidget extends StatelessWidget {
               );
             },
             //child: AssetImage('assets/images/ic_app_icon.png'),
-            child: const Text('SEMILAC', style: TextStyle(fontSize: 20)),
+            child: const Text('PlanetDiscount', style: TextStyle(fontSize: 20)),
           ),
           new Image.asset('assets/images/ic_app_icon.png', width: 140),
           RaisedButton(

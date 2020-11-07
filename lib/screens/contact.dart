@@ -10,9 +10,9 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.orange,
         title: Text(
-          'Contact US',
+          'Contact ',
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
       ),
@@ -26,13 +26,13 @@ class Contact extends StatelessWidget {
             width: 190,
             height: 130,
           ),
-          textColor: Colors.white,
-          cardColor: Colors.pink,
+          textColor: Colors.black,
+          cardColor: Colors.orange,
           companyColor: Colors.black87,
           tagLine: "Your Shop for the  beauty",
           taglineColor: Colors.black,
           email: 'semilac@gmail.com',
-          companyName: 'Our Contacts',
+          companyName: 'Nos Contacts',
           phoneNumber: '+91123456789',
           website: 'https://semilac.com',
           facebookHandle: 'https://facebook.com',
@@ -48,9 +48,9 @@ class Contact extends StatelessWidget {
           MaterialPageRoute(builder: (context) => SEMILAC()),
         ),
         child: Icon(
-          Icons.home,
+          Icons.send,
           color: Colors.white,
-          size: 30,
+          size: 25,
         ),
       ),
     );
