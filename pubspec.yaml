@@ -63,6 +63,7 @@ flutter:
      - assets/icons/icons8-comb-100.png
      - assets/images/insta.png
      - assets/images/facebook.jpg
+     - assets/images/planetdiscountslogo.png
 
 
   # To add assets to your application, add an assets section, like this:

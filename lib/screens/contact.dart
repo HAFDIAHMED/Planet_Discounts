@@ -22,7 +22,7 @@ class Contact extends StatelessWidget {
         ContactUs(
           //logo: AssetImage('assets/images/ic_app_icon.png'),
           image: Image.asset(
-            'assets/images/ic_app_icon.png',
+            'assets/images/planetdiscountslogo.png',
             width: 190,
             height: 130,
           ),
@@ -34,7 +34,7 @@ class Contact extends StatelessWidget {
           email: 'semilac@gmail.com',
           companyName: 'Nos Contacts',
           phoneNumber: '+91123456789',
-          website: 'https://semilac.com',
+          website: 'https://planetdiscounts.ma',
           facebookHandle: 'https://facebook.com',
           instagram: 'https://insta.com',
           //linkedinURL: 'https://www.linkedin.com',

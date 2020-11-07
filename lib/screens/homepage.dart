@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         drawer: DrawerWidget(),
         appBar: AppBar(
-          title: Image.asset('assets/images/ic_app_icon.png'),
+          title: Image.asset('assets/images/planetdiscountslogo.png'),
           actions: <Widget>[
             IconButton(
                 icon: Icon(

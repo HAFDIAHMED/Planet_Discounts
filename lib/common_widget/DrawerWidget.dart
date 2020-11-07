@@ -117,7 +117,7 @@ Widget _createDrawerHeader() {
           padding: EdgeInsets.all(20),
           child: Center(
             child: Image.asset(
-              'assets/images/ic_app_icon.png',
+              'assets/images/planetdiscountslogo.png',
               width: 130,
               height: 130,
             ),
