@@ -118,8 +118,8 @@ Widget _createDrawerHeader() {
           child: Center(
             child: Image.asset(
               'assets/images/planetdiscountslogo.png',
-              width: 130,
-              height: 130,
+              width: 220,
+              height: 220,
             ),
           ),
         ),

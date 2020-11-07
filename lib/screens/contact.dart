@@ -12,8 +12,8 @@ class Contact extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.orange,
         title: Text(
-          'Contact ',
-          style: TextStyle(fontSize: 20, color: Colors.white),
+          'Contacts ',
+          style: TextStyle(fontSize: 20, color: Colors.black),
         ),
       ),
 
@@ -29,8 +29,7 @@ class Contact extends StatelessWidget {
           textColor: Colors.black,
           cardColor: Colors.orange,
           companyColor: Colors.black87,
-          tagLine: "Your Shop for the  beauty",
-          taglineColor: Colors.black,
+          taglineColor: Colors.grey,
           email: 'semilac@gmail.com',
           companyName: 'Nos Contacts',
           phoneNumber: '+91123456789',

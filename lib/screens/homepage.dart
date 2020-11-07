@@ -18,8 +18,8 @@ class HomePage extends StatelessWidget {
         drawer: DrawerWidget(),
         appBar: AppBar(
           title: Image.asset(
-            'assets/images/planetdiscountslogo.png',
-            width: 100,
+            'assets/images/planetdiscountslogo1.png',
+            width: 130,
           ),
           actions: <Widget>[
             IconButton(
