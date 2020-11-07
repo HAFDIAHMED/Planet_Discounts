@@ -90,14 +90,14 @@ class DetailPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Price".toUpperCase(),
+                Text("Prox".toUpperCase(),
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         color: Color(0xFF565656))),
-                Text("\$${loadedPdt.price}".toUpperCase(),
+                Text("\DH${loadedPdt.price}".toUpperCase(),
                     style: TextStyle(
-                        color: Color(0xFF0dc2cd),
+                        color: Colors.orange,
                         //fontFamily: 'Roboto-Light.ttf',
                         fontSize: 20,
                         fontWeight: FontWeight.w500)),
@@ -166,7 +166,7 @@ class DetailPage extends StatelessWidget {
                 minimumValue: 0,
                 maximumValue: 100,
                 stepValue: 1,
-                counterBackgroundColor: Colors.pinkAccent,
+                counterBackgroundColor: Colors.orange,
                 //buttonsColor: Colors.pinkAccent,
                 backgroundColor: Colors.black,
                 onChanged: (int value) => {

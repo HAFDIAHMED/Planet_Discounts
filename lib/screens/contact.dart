@@ -36,7 +36,7 @@ class Contact extends StatelessWidget {
           phoneNumber: '+91123456789',
           website: 'https://planetdiscounts.ma',
           facebookHandle: 'https://facebook.com',
-          instagram: 'https://insta.com',
+          instagram: 'https://instagram.com',
           //linkedinURL: 'https://www.linkedin.com',
           //twitterHandle: 'semilac',
         ),

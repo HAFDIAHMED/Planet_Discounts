@@ -16,7 +16,7 @@ class HomeBody extends StatelessWidget {
         ),
         Center(
             child: Text(
-          'Categories',
+          'Catégories',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         )),
         SizedBox(
@@ -25,7 +25,7 @@ class HomeBody extends StatelessWidget {
         Category(),
         Center(
             child: Text(
-          'Products',
+          'Produits',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         )),
         AllProducts()
