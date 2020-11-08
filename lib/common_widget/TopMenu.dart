@@ -13,14 +13,14 @@ class _TopMenusState extends State<TopMenus> {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          TopMenuTiles(name: "vétements", imageUrl: "ic_bag(6)", slug: ""),
-          TopMenuTiles(name: "Accessoires", imageUrl: "ic_bag(2)", slug: ""),
-          TopMenuTiles(name: "Electronique", imageUrl: "ic_bag(3)", slug: ""),
-          TopMenuTiles(name: "Sac", imageUrl: "ic_bag(1)", slug: ""),
-          TopMenuTiles(name: "Maquillage", imageUrl: "ic_bag(5)", slug: ""),
-          TopMenuTiles(name: "Oridinateurs", imageUrl: "ic_bag(3)", slug: ""),
-          TopMenuTiles(name: "Livres", imageUrl: "ic_bag(2)", slug: ""),
-          TopMenuTiles(name: "bagages", imageUrl: "ic_bag(1)", slug: ""),
+          TopMenuTiles(name: "vétements", imageUrl: "ic_bag (6)", slug: ""),
+          TopMenuTiles(name: "Accessoires", imageUrl: "ic_bag (2)", slug: ""),
+          TopMenuTiles(name: "Electronique", imageUrl: "ic_bag (3)", slug: ""),
+          TopMenuTiles(name: "Sac", imageUrl: "ic_bag (1)", slug: ""),
+          TopMenuTiles(name: "Maquillage", imageUrl: "ic_bag (5)", slug: ""),
+          TopMenuTiles(name: "Oridinateurs", imageUrl: "ic_bag (3)", slug: ""),
+          TopMenuTiles(name: "Livres", imageUrl: "ic_bag (2)", slug: ""),
+          TopMenuTiles(name: "bagages", imageUrl: "ic_bag (1)", slug: ""),
         ],
       ),
     );
