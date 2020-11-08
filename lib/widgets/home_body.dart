@@ -5,6 +5,7 @@ import '../widgets/all_pdts.dart';
 import '../widgets/srearchBar.dart';
 import '../common_widget/TopPromoSlider.dart';
 import '../screens/product_screens_grid.dart';
+import '../common_widget/TopMenu.dart';
 
 class HomeBody extends StatelessWidget {
   @override
@@ -25,7 +26,7 @@ class HomeBody extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        Category(),
+        TopMenus(),
         /*Center(
             child: Text(
           'Produits',
