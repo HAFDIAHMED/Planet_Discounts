@@ -14,9 +14,11 @@ class PdtSGride extends StatelessWidget {
         ),
         body: ListView(
           children: <Widget>[
-            Text(
-              'Produits',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            Center(
+              child: Text(
+                'Produits',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
             AllProducts()
           ],
