@@ -7,6 +7,7 @@ import '../screens/signup.dart';
 import '../screens/notifications.dart';
 import '../widgets/semilac.dart';
 import '../screens/product_screens_grid.dart';
+import '../screens/allpdts2.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override

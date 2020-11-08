@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/all_pdts.dart';
+import 'allpdts2.dart';
 
 class PdtSGride extends StatelessWidget {
   @override
@@ -20,7 +21,7 @@ class PdtSGride extends StatelessWidget {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
-            AllProducts()
+            AllProducts2()
           ],
         ));
   }
