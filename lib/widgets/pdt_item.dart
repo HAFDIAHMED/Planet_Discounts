@@ -47,7 +47,8 @@ class PdtItem extends StatelessWidget {
 
                 //Image.network(imageUrl),
                 footer: GridTileBar(
-                  title: Text(name, style: TextStyle(color: Colors.black)),
+                  title:
+                      Text(pdt.category, style: TextStyle(color: Colors.black)),
                   trailing: IconButton(
                       icon: Icon(
                         Icons.add_shopping_cart,

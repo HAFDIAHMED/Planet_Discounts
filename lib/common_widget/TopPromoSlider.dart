@@ -34,7 +34,7 @@ class TopPromoSlider extends StatelessWidget {
             ],
             dotSize: 4.0,
             dotSpacing: 15.0,
-            dotColor: Colors.purple,
+            dotColor: Colors.orange,
             indicatorBgPadding: 5.0,
             dotBgColor: Colors.black54.withOpacity(0.2),
             borderRadius: true,

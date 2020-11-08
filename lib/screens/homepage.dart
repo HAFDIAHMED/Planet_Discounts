@@ -24,6 +24,15 @@ class HomePage extends StatelessWidget {
           actions: <Widget>[
             IconButton(
                 icon: Icon(
+                  Icons.person,
+                  size: 30,
+                ),
+                onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SingUp()),
+                    )),
+            IconButton(
+                icon: Icon(
                   Icons.shopping_basket,
                   size: 30,
                 ),

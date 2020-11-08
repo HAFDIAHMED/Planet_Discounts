@@ -9,35 +9,35 @@ class Category extends StatelessWidget {
       height: 120,
       child: ListView(scrollDirection: Axis.horizontal, children: <Widget>[
         CategoryCard(
-            Image(
+            /*Image(
               image: AssetImage('assets/icons/icons8-manicure.png'),
               width: 50,
-            ),
-            'Manucure'),
+            ),*/
+            'Vétements'),
         CategoryCard(
-            Image(
+            /*Image(
               image: AssetImage('assets/icons/icons8-face-powder-100.png'),
               width: 50,
-            ),
-            'Make up'),
+            ),*/
+            'Accessoires'),
         CategoryCard(
-            Image(
+            /* Image(
               image: AssetImage('assets/icons/icons8-comb-100.png'),
               width: 50,
-            ),
-            'Coiffant'),
+            ),*/
+            'ordinateurs'),
         CategoryCard(
-            Image(
+            /*Image(
               image: AssetImage('assets/icons/icons8-manicure.png'),
               width: 50,
-            ),
-            'watches'),
+            ),*/
+            'Electronique'),
         CategoryCard(
-            Image(
+            /*Image(
               image: AssetImage('assets/icons/icons8-manicure.png'),
               width: 50,
-            ),
-            'Iphone'),
+            ),*/
+            'Bagages et sacs'),
       ]),
     );
   }

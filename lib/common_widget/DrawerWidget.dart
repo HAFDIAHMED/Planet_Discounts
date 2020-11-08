@@ -6,6 +6,7 @@ import '../screens/contact.dart';
 import '../screens/signup.dart';
 import '../screens/notifications.dart';
 import '../widgets/semilac.dart';
+import '../screens/product_screens_grid.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -41,7 +42,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'Produits',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                      MaterialPageRoute(builder: (context) => PdtSGride()),
                     )),
             _createDrawerItem(
                 icon: Icons.shopping_basket,
