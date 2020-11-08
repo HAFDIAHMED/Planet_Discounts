@@ -64,6 +64,9 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                       context,
                       MaterialPageRoute(builder: (context) => Contact()),
                     )),
+            SizedBox(
+              height: 90,
+            ),
             Center(
               child: Wrap(
                 direction: Axis.horizontal,
