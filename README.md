@@ -1,4 +1,4 @@
-# MYAPP
+# PLANET DISCOUNTS
 
 A new Flutter project.
 
