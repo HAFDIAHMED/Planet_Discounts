@@ -148,7 +148,7 @@ class DetailPage extends StatelessWidget {
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         color: Color(0xFF565656))),
-                Text("\$${loadedPdt.price} DH  ".toUpperCase(),
+                Text("\$${loadedPdt.price} DH ".toUpperCase(),
                     style: TextStyle(
                         color: Colors.orange,
                         //fontFamily: 'Roboto-Light.ttf',
@@ -159,7 +159,8 @@ class DetailPage extends StatelessWidget {
                         color: Colors.blueGrey,
                         //fontFamily: 'Roboto-Light.ttf',
                         fontSize: 20,
-                        fontWeight: FontWeight.w500)),
+                        fontWeight: FontWeight.w500,
+                        decoration: TextDecoration.lineThrough)),
               ],
             ),
           ),
