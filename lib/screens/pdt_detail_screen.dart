@@ -83,7 +83,7 @@ class DetailPage extends StatelessWidget {
               children: <Widget>[
                 Container(
                   alignment: Alignment.topLeft,
-                  padding: EdgeInsets.only(left: 5, top: 5),
+                  //padding: EdgeInsets.only(left: 5, top: 5),
                   child: Text("En stock",
                       style: TextStyle(
                           fontSize: 16,
