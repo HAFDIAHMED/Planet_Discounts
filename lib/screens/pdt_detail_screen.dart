@@ -81,7 +81,7 @@ class DetailPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                /*Container(
+                Container(
                   alignment: Alignment.topLeft,
                   padding: EdgeInsets.only(left: 5, top: 5),
                   child: Text("En stock",
@@ -89,12 +89,7 @@ class DetailPage extends StatelessWidget {
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
                           color: Colors.green[300])),
-                ),*/
-                Text("En stock",
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.green[300])),
+                ),
                 Container(
                   padding: EdgeInsets.only(top: 3, left: 5),
                   child: Row(
