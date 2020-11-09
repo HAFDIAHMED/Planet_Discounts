@@ -64,20 +64,78 @@ class DetailPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Produit:".toUpperCase(),
+                /*Text("Produit:".toUpperCase(),
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        color: Color(0xFF565656))),
+                        color: Color(0xFF565656))),*/
                 Text(loadedPdt.name,
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        color: Colors.orange)),
-                Icon(
-                  Icons.arrow_forward_ios,
-                  color: Color(0xFF999999),
-                )
+                        color: Color(0xFF565656))),
+              ],
+            ),
+          ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                /*Container(
+                  alignment: Alignment.topLeft,
+                  padding: EdgeInsets.only(left: 5, top: 5),
+                  child: Text("En stock",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.green[300])),
+                ),*/
+                Text("En stock",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.green[300])),
+                Container(
+                  padding: EdgeInsets.only(top: 3, left: 5),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.star,
+                        size: 10,
+                        color: Color(0xFFfb3132),
+                      ),
+                      Icon(
+                        Icons.star,
+                        size: 10,
+                        color: Color(0xFFfb3132),
+                      ),
+                      Icon(
+                        Icons.star,
+                        size: 10,
+                        color: Color(0xFFfb3132),
+                      ),
+                      Icon(
+                        Icons.star,
+                        size: 10,
+                        color: Color(0xFFfb3132),
+                      ),
+                      Icon(
+                        Icons.star,
+                        size: 10,
+                        color: Color(0xFF9b9b9c),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.topLeft,
+                  padding: EdgeInsets.only(left: 5, top: 5),
+                  child: Text("200",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFF565656))),
+                ),
               ],
             ),
           ),
