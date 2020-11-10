@@ -31,9 +31,33 @@ class CartScreen extends StatelessWidget {
                     cart.items.values.toList()[i].quantity,
                     cart.items.values.toList()[i].name)),
           ),
-          CheckoutButton(
-            cart: cart,
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text("TOTAL"),
+                    Text(
+                      cart.totalAmount.toString(),
+                      //"89.01 DH",
+                    )
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  height: 50,
+                  child: CheckoutButton(
+                    cart: cart,
+                  ),
+                ),
+              ),
+            ],
           ),
+          /*CheckoutButton(
+            cart: cart,
+          ),*/
 
           // FlatButton(
           //     onPressed: () {
@@ -44,7 +68,7 @@ class CartScreen extends StatelessWidget {
           //     ))
         ],
       ),
-      floatingActionButton: FloatingActionButton(
+      /*floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => SEMILAC()),
@@ -53,7 +77,7 @@ class CartScreen extends StatelessWidget {
           Icons.home,
           size: 30,
         ),
-      ),
+      ),*/
     );
   }
 }
@@ -70,6 +94,7 @@ class _CheckoutButtonState extends State<CheckoutButton> {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
+      color: Colors.grey,
       child: Text('Payer'),
       onPressed: widget.cart.totalAmount <= 0
           ? null

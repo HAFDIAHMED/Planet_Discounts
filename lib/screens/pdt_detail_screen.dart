@@ -272,8 +272,11 @@ class _MyCounterState extends State<MyCounter> {
     return Row(
       //mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Text(
-          "   Quantité:",
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            "Quantité:",
+          ),
         ),
         SizedBox(width: 10),
         GestureDetector(
@@ -323,7 +326,7 @@ class _MyCounterState extends State<MyCounter> {
           },
         ),
         //Spacer(),
-        SizedBox(width: 30),
+        //SizedBox(width: 30),
         RaisedButton(
           elevation: 0,
           shape: new RoundedRectangleBorder(
@@ -339,7 +342,7 @@ class _MyCounterState extends State<MyCounter> {
           color: Colors.orange,
           textColor: Colors.white,
           child: Container(
-            padding: EdgeInsets.only(left: 5, right: 5, top: 15, bottom: 15),
+            padding: EdgeInsets.all(16.0),
             child: Text("ajouter au panier".toUpperCase(),
                 style: TextStyle(
                     fontSize: 10,
