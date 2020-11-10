@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/basic.dart';
 
 import '../widgets/home_body.dart';
+import '../pages/SignInPage.dart';
 
 import '../widgets/category.dart';
 
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
                 ),
                 onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SingUp()),
+                      MaterialPageRoute(builder: (context) => SignInPage()),
                     )),
             IconButton(
                 icon: Icon(
