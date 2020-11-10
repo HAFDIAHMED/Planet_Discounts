@@ -270,7 +270,7 @@ class _MyCounterState extends State<MyCounter> {
 
     final cart = Provider.of<Cart>(context);
     return Row(
-      //mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: <Widget>[
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -278,7 +278,7 @@ class _MyCounterState extends State<MyCounter> {
             "Quantité:",
           ),
         ),
-        SizedBox(width: 10),
+        //SizedBox(width: 10),
         GestureDetector(
           child: Container(
             padding: const EdgeInsets.all(5.0),
