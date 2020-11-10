@@ -34,7 +34,7 @@ class DetailPage extends StatelessWidget {
                   child: Image.network(
                     loadedPdt.imgUrl,
                     height: 240.0,
-                    width: MediaQuery.of(context).size.width,
+                    //width: MediaQuery.of(context).size.width,
                     fit: BoxFit.cover,
                   ),
                 ),
