@@ -218,7 +218,7 @@ class DetailPage extends StatelessWidget {
               )*/
           ),*/
 
-          Container(
+          /*Container(
             alignment: Alignment.bottomCenter,
             padding: const EdgeInsets.all(8.0),
             child: GradualStepper(
@@ -232,7 +232,7 @@ class DetailPage extends StatelessWidget {
                 onChanged: (int value) => {
                       cart.addItem(productId, loadedPdt.name, loadedPdt.price),
                     }),
-          ),
+          ),*/
         ],
       ),
       /*floatingActionButton: FloatingActionButton(
@@ -244,8 +244,80 @@ class DetailPage extends StatelessWidget {
           size: 30,
         ),
       ),*/
+      //bottomNavigationBar: MyCounter(),
     );
     var scaffold = scaffold2;
     return scaffold;
+  }
+}
+
+class MyCounter extends StatefulWidget {
+  const MyCounter({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  _MyCounterState createState() => _MyCounterState();
+}
+
+class _MyCounterState extends State<MyCounter> {
+  int _currentAmount = 0;
+  @override
+  Widget build(BuildContext context) {
+    final productId = ModalRoute.of(context).settings.arguments as String;
+    final loadedPdt = Provider.of<Products>(context).findById(productId);
+
+    final cart = Provider.of<Cart>(context);
+    return Row(
+      //mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.black,
+            ),
+            child: Icon(
+              Icons.remove,
+              color: Colors.white,
+            ),
+          ),
+          onTap: () {
+            setState(() {
+              if (_currentAmount > 0) {
+                _currentAmount -= 1;
+                cart.removeItem(productId);
+              }
+            });
+          },
+        ),
+        SizedBox(width: 15),
+        Text(
+          "$_currentAmount",
+          //style: Theme.of(context).textTheme.title,
+        ),
+        SizedBox(width: 15),
+        GestureDetector(
+          child: Container(
+            padding: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.black,
+            ),
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+          onTap: () {
+            setState(() {
+              _currentAmount += 1;
+              cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+            });
+          },
+        ),
+      ],
+    );
   }
 }
