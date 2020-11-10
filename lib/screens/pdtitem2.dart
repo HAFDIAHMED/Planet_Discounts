@@ -38,7 +38,7 @@ class PdtItem2 extends StatelessWidget {
                   Image.network(
                     pdt.imgUrl,
                     //width: 100,
-                    //height: 150,
+                    height: 100,
                   ),
                   Container(
                     alignment: Alignment.center,
@@ -49,7 +49,7 @@ class PdtItem2 extends StatelessWidget {
                         style: TextStyle(
                             color: Color(0xFF444444),
                             fontFamily: 'Roboto-Light.ttf',
-                            fontSize: 15,
+                            fontSize: 10,
                             fontWeight: FontWeight.w400)),
                   ),
                   Container(
@@ -61,7 +61,7 @@ class PdtItem2 extends StatelessWidget {
                                 ? Color(0xFFf67426)
                                 : Color(0xFF0dc2cd),
                             fontFamily: 'Roboto-Light.ttf',
-                            fontSize: 20,
+                            fontSize: 10,
                             fontWeight: FontWeight.w500)),
                   )
                 ],
