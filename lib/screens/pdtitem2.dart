@@ -37,7 +37,7 @@ class PdtItem2 extends StatelessWidget {
                 children: <Widget>[
                   Image.network(
                     pdt.imgUrl,
-                    width: 100,
+                    //width: 100,
                     //height: 150,
                   ),
                   Container(
