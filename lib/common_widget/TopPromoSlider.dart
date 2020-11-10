@@ -31,6 +31,21 @@ class TopPromoSlider extends StatelessWidget {
                 height: 150,
                 width: double.infinity,
               ),
+              Image.asset(
+                "assets/images/11.jpg",
+                height: 150,
+                width: double.infinity,
+              ),
+              Image.asset(
+                "assets/images/22.jpg",
+                height: 150,
+                width: double.infinity,
+              ),
+              Image.asset(
+                "assets/images/33.jpg",
+                height: 150,
+                width: double.infinity,
+              ),
             ],
             dotSize: 4.0,
             dotSpacing: 15.0,

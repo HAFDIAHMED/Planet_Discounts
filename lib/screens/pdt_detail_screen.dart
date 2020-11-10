@@ -84,11 +84,12 @@ class DetailPage extends StatelessWidget {
                 Container(
                   alignment: Alignment.topLeft,
                   //padding: EdgeInsets.only(left: 5, top: 5),
-                  child: Text("En stock",
+
+                  child: Text("    En stock",
                       style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
-                          color: Colors.green[300])),
+                          color: Colors.greenAccent[400])),
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 3, left: 5),
@@ -148,7 +149,7 @@ class DetailPage extends StatelessWidget {
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         color: Color(0xFF565656))),
-                Text("\$${loadedPdt.price} DH ".toUpperCase(),
+                Text("${loadedPdt.price} DH".toUpperCase(),
                     style: TextStyle(
                         color: Colors.orange,
                         //fontFamily: 'Roboto-Light.ttf',
@@ -161,6 +162,50 @@ class DetailPage extends StatelessWidget {
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
                         decoration: TextDecoration.lineThrough)),
+              ],
+            ),
+          ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                SizedBox(
+                  height: 5,
+                ),
+                Text("Taille:",
+                    //textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF565656))),
+                DropdownButton<String>(
+                  items:
+                      <String>['S', 'M', 'L', 'XL', 'XXL'].map((String value) {
+                    return new DropdownMenuItem<String>(
+                      value: value,
+                      child: new Text(value),
+                    );
+                  }).toList(),
+                  onChanged: (_) {},
+                ),
+
+                ///
+                Text("Color:",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF565656))),
+                DropdownButton<String>(
+                  items: <String>['vert', 'rouge', 'noir', 'blanc']
+                      .map((String value) {
+                    return new DropdownMenuItem<String>(
+                      value: value,
+                      child: new Text(value),
+                    );
+                  }).toList(),
+                  onChanged: (_) {},
+                ),
               ],
             ),
           ),
@@ -184,7 +229,7 @@ class DetailPage extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                Text("\$${loadedPdt.description}",
+                Text(loadedPdt.description,
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                         fontSize: 16,
@@ -193,58 +238,9 @@ class DetailPage extends StatelessWidget {
               ],
             ),
           ),
-          /*Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.grey[300],
-                borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                boxShadow: [BoxShadow(blurRadius: 5, color: Colors.blueGrey)],
-              ),
-              child: new Center(
-                  child: new Text(
-                '\$${loadedPdt.description}',
-                style: TextStyle(
-                  fontSize: 20,
-                ),
-              )),
-            ),
-
-            /*Text(
-                '${loadedPdt.description}',
-                style: TextStyle(
-                  fontSize: 20,
-                ),
-              )*/
-          ),*/
-
-          /*Container(
-            alignment: Alignment.bottomCenter,
-            padding: const EdgeInsets.all(8.0),
-            child: GradualStepper(
-                initialValue: 0,
-                minimumValue: 0,
-                maximumValue: 100,
-                stepValue: 1,
-                counterBackgroundColor: Colors.orange,
-                //buttonsColor: Colors.pinkAccent,
-                backgroundColor: Colors.black,
-                onChanged: (int value) => {
-                      cart.addItem(productId, loadedPdt.name, loadedPdt.price),
-                    }),
-          ),*/
         ],
       ),
-      /*floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          cart.addItem(productId, loadedPdt.name, loadedPdt.price);
-        },
-        child: Icon(
-          Icons.add_shopping_cart,
-          size: 30,
-        ),
-      ),*/
-      //bottomNavigationBar: MyCounter(),
+      bottomNavigationBar: MyCounter(),
     );
     var scaffold = scaffold2;
     return scaffold;
@@ -271,6 +267,10 @@ class _MyCounterState extends State<MyCounter> {
     return Row(
       //mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+        Text(
+          "   Quantité:",
+        ),
+        SizedBox(width: 10),
         GestureDetector(
           child: Container(
             padding: const EdgeInsets.all(5.0),
@@ -316,6 +316,31 @@ class _MyCounterState extends State<MyCounter> {
               cart.addItem(productId, loadedPdt.name, loadedPdt.price);
             });
           },
+        ),
+        //Spacer(),
+        SizedBox(width: 30),
+        RaisedButton(
+          elevation: 0,
+          shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                  bottomRight: Radius.circular(10)),
+              side: BorderSide(color: Color(0xFFfef2f2))),
+          onPressed: () {
+            cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+          },
+          color: Colors.orange,
+          textColor: Colors.white,
+          child: Container(
+            padding: EdgeInsets.only(left: 5, right: 5, top: 15, bottom: 15),
+            child: Text("ajouter au panier".toUpperCase(),
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black)),
+          ),
         ),
       ],
     );
