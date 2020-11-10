@@ -30,8 +30,13 @@ class DetailPage extends StatelessWidget {
                 width: 200,
                 margin: EdgeInsets.all(10),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(30),
-                  child: Image.network(loadedPdt.imgUrl),
+                  borderRadius: BorderRadius.circular(15),
+                  child: Image.network(
+                    loadedPdt.imgUrl,
+                    height: 240.0,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
 
