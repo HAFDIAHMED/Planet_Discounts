@@ -37,14 +37,14 @@ class PdtItem2 extends StatelessWidget {
                 children: <Widget>[
                   Image.network(
                     pdt.imgUrl,
-                    width: 150,
-                    height: 150,
+                    width: 100,
+                    //height: 150,
                   ),
                   Container(
                     alignment: Alignment.center,
                     padding: EdgeInsets.only(left: 10, right: 10, top: 15),
-                    child: Text(
-                        (name.length <= 40 ? name : name.substring(0, 40)),
+                    child: Text(pdt.name,
+                        //(name.length <= 40 ? name : name.substring(0, 40)),
                         textAlign: TextAlign.left,
                         style: TextStyle(
                             color: Color(0xFF444444),
