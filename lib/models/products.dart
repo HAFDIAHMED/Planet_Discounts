@@ -91,8 +91,7 @@ class Products with ChangeNotifier {
     ),
     Product(
       id: '8',
-      name:
-          "Sans fil écouteurs Bluetooth 5.0 avec powerbank 2200mAh boîte de charge sans fil",
+      name: "Sans fil écouteurs Bluetooth 5.0 ",
       imgUrl:
           'https://planetdiscounts.ma/assets/images/products/1602196108nWaz5Hnv.png',
       price: 299,
@@ -106,7 +105,7 @@ class Products with ChangeNotifier {
       imgUrl:
           'https://semilac.pl/media/catalog/product/cache/c66786404a7109b68bb918f8905d342c/s/e/semilac_cie_do_powiek_w_kremie_pink_gold_094_3.jpg',
       price: 4,
-      category: 'Electronique',
+      category: 'Make up',
       description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     ),
@@ -116,7 +115,7 @@ class Products with ChangeNotifier {
       imgUrl:
           'https://semilac.pl/media/catalog/product/cache/c66786404a7109b68bb918f8905d342c/s/k/sklep_www_pomadki_klasyczne_005.jpg',
       price: 4,
-      category: 'Electronique',
+      category: 'Make up',
       description:
           " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     ),
