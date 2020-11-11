@@ -10,6 +10,17 @@ class SingUp extends StatelessWidget {
           style: TextStyle(fontSize: 30, color: Theme.of(context).accentColor),
         ),
       ),
+      body: new TextFormField(
+        initialValue: 'Input text',
+        decoration: InputDecoration(
+          labelText: 'Label text',
+          errorText: 'Error message',
+          border: OutlineInputBorder(),
+          suffixIcon: Icon(
+            Icons.error,
+          ),
+        ),
+      ),
     );
   }
 }
