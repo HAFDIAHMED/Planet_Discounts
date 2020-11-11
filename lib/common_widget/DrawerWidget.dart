@@ -8,6 +8,7 @@ import '../screens/notifications.dart';
 import '../widgets/semilac.dart';
 import '../screens/product_screens_grid.dart';
 import '../screens/allpdts2.dart';
+import '../models/brand.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -57,7 +58,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'Nos Marques',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                      MaterialPageRoute(builder: (context) => Brand()),
                     )),
             _createDrawerItem(
                 icon: Icons.call,
