@@ -14,9 +14,10 @@ class CartScreen extends StatelessWidget {
     final cart = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xfffb5d04),
         title: Text(
           'Mon panier',
-          style: TextStyle(fontSize: 30, color: Theme.of(context).accentColor),
+          style: TextStyle(fontSize: 30, color: Color(0xff333333)),
         ),
       ),
       body: Column(
@@ -25,11 +26,12 @@ class CartScreen extends StatelessWidget {
             child: ListView.builder(
                 itemCount: cart.items.length,
                 itemBuilder: (ctx, i) => CartPdt(
-                    cart.items.values.toList()[i].id,
-                    cart.items.keys.toList()[i],
-                    cart.items.values.toList()[i].price,
-                    cart.items.values.toList()[i].quantity,
-                    cart.items.values.toList()[i].name)),
+                      cart.items.values.toList()[i].id,
+                      cart.items.keys.toList()[i],
+                      cart.items.values.toList()[i].price,
+                      cart.items.values.toList()[i].quantity,
+                      cart.items.values.toList()[i].name,
+                    )),
           ),
           Row(
             children: <Widget>[

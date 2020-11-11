@@ -47,12 +47,12 @@ class PdtItem extends StatelessWidget {
 
                 //Image.network(imageUrl),
                 footer: GridTileBar(
-                  title:
-                      Text(pdt.category, style: TextStyle(color: Colors.black)),
+                  title: Text(pdt.category,
+                      style: TextStyle(color: Color(0xff333333))),
                   trailing: IconButton(
                       icon: Icon(
                         Icons.add_shopping_cart,
-                        color: Colors.black,
+                        color: Color(0xff333333),
                       ),
                       onPressed: () {
                         Scaffold.of(context).showSnackBar(SnackBar(
@@ -61,7 +61,7 @@ class PdtItem extends StatelessWidget {
                         ));
                         cart.addItem(pdt.id, pdt.name, pdt.price);
                       }),
-                  backgroundColor: Colors.orange,
+                  backgroundColor: Color(0xfffb5d04),
                 )),
           ),
         ));

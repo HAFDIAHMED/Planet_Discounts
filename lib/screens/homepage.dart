@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         drawer: DrawerWidget(),
         appBar: AppBar(
+          backgroundColor: Color(0xfffb5d04),
           title: Image.asset(
             'assets/images/planetdiscountslogo1.png',
             width: 130,
@@ -27,6 +28,7 @@ class HomePage extends StatelessWidget {
                 icon: Icon(
                   Icons.person,
                   size: 30,
+                  color: Color(0xff333333),
                 ),
                 onPressed: () => Navigator.push(
                       context,
@@ -36,6 +38,7 @@ class HomePage extends StatelessWidget {
                 icon: Icon(
                   Icons.shopping_basket,
                   size: 30,
+                  color: Color(0xff333333),
                 ),
                 onPressed: () =>
                     Navigator.of(context).pushNamed(CartScreen.routeName)),

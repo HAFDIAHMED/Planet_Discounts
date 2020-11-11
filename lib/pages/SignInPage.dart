@@ -52,12 +52,12 @@ class _SignInPageState extends State<SignInPage> {
                     alignment: Alignment.topCenter,
                     child: Image.asset(
                       "assets/images/planetdiscountslogo.png",
-                      width: 500,
+                      width: 400,
                       //height: 300,
                     ),
                   ),
                   SizedBox(
-                    height: 15,
+                    height: 80,
                   ),
                   TextField(
                     showCursor: true,
