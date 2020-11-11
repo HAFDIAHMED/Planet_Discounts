@@ -52,7 +52,7 @@ class _SignInPageState extends State<SignInPage> {
                     alignment: Alignment.topCenter,
                     child: Image.asset(
                       "assets/images/planetdiscountslogo.png",
-                      width: 400,
+                      width: 500,
                       //height: 300,
                     ),
                   ),
@@ -117,7 +117,7 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 15,
+                    height: 30,
                   ),
                   /*Container(
                     width: double.infinity,

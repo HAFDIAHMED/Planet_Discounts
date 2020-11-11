@@ -35,13 +35,13 @@ class CartScreen extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("TOTAL"),
-                    Text(
+                    Text('TOTAL:\ ${cart.totalAmount.toString()} DH'),
+                    /*Text(
                       cart.totalAmount.toString(),
                       //"89.01 DH",
-                    )
+                    )*/
                   ],
                 ),
               ),
@@ -94,7 +94,15 @@ class _CheckoutButtonState extends State<CheckoutButton> {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      color: Colors.grey,
+      shape: new RoundedRectangleBorder(
+          borderRadius: new BorderRadius.only(
+              topLeft: Radius.circular(10),
+              bottomLeft: Radius.circular(10),
+              topRight: Radius.circular(10),
+              bottomRight: Radius.circular(10)),
+          side: BorderSide(color: Color(0xFFfef2f2))),
+      color: Colors.orange,
+      textColor: Colors.white,
       child: Text('Payer'),
       onPressed: widget.cart.totalAmount <= 0
           ? null
