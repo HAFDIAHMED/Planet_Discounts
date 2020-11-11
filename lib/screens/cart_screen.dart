@@ -5,6 +5,7 @@ import '../models/cart.dart';
 import '../widgets/cart_item.dart';
 import 'package:MYAPP/main.dart';
 import '../widgets/semilac.dart';
+import '../screens/commandes.dart';
 
 class CartScreen extends StatelessWidget {
   static const routeName = '/cart';
@@ -114,6 +115,10 @@ class _CheckoutButtonState extends State<CheckoutButton> {
               await Provider.of<Orders>(context, listen: false).addOrder(
                   widget.cart.items.values.toList(), widget.cart.totalAmount);
               widget.cart.clear();
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Commande()),
+              );
             },
     );
   }
