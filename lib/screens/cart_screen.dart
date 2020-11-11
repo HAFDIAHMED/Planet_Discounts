@@ -104,7 +104,7 @@ class _CheckoutButtonState extends State<CheckoutButton> {
               topRight: Radius.circular(10),
               bottomRight: Radius.circular(10)),
           side: BorderSide(color: Color(0xFFfef2f2))),
-      color: Colors.orange,
+      color: Color(0xfffb5d04),
       textColor: Colors.white,
       child: Text('Commander',
           style: TextStyle(

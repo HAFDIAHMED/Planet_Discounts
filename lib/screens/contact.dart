@@ -10,7 +10,7 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor: Color(0xfffb5d04),
         title: Text(
           'Contacts ',
           style: TextStyle(fontSize: 20, color: Colors.black),
@@ -26,10 +26,10 @@ class Contact extends StatelessWidget {
             width: 190,
             height: 130,
           ),
-          textColor: Colors.black,
-          cardColor: Colors.orange,
-          companyColor: Colors.black87,
-          taglineColor: Colors.grey,
+          textColor: Color(0xff333333),
+          cardColor: Color(0xfffb5d04),
+          companyColor: Color(0xff333333),
+          taglineColor: Color(0xff333333),
           email: 'semilac@gmail.com',
           companyName: 'Nos Contacts',
           phoneNumber: '+91123456789',

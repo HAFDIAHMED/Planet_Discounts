@@ -58,7 +58,7 @@ class PdtItem2 extends StatelessWidget {
                     child: Text(" ${pdt.price} DH ",
                         style: TextStyle(
                             color: (pdt.price != null)
-                                ? Color(0xFFf67426)
+                                ? Color(0xfffb5d04)
                                 : Color(0xFF0dc2cd),
                             fontFamily: 'Roboto-Light.ttf',
                             fontSize: 10,

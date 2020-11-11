@@ -6,6 +6,7 @@ class Commande extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xfffb5d04),
           title: Text(
             ' Commande',
             style:
@@ -24,7 +25,7 @@ class Commande extends StatelessWidget {
                   "Valider Votre Commande",
                   style: TextStyle(
                       fontSize: 20,
-                      color: Colors.black,
+                      color: Color(0xff333333),
                       fontWeight: FontWeight.bold),
                 ),
               ),
@@ -34,14 +35,14 @@ class Commande extends StatelessWidget {
               Container(
                 //height: 300,
                 child: TextFormField(
-                  initialValue: 'nom',
+                  //initialValue: 'nom',
                   decoration: InputDecoration(
                     labelText: 'Votre nom complet *',
                     //errorText: 'Error message',
                     border: OutlineInputBorder(),
                     suffixIcon: Icon(
                       Icons.person,
-                      color: Colors.black,
+                      color: Color(0xff333333),
                     ),
                   ),
                 ),
@@ -52,14 +53,14 @@ class Commande extends StatelessWidget {
               Container(
                 //height: 300,
                 child: TextFormField(
-                  initialValue: 'Téléhone',
+                  //initialValue: 'Téléhone',
                   decoration: InputDecoration(
                     labelText: 'Votre numéro du Téléphone *',
                     //errorText: 'Error message',
                     border: OutlineInputBorder(),
                     suffixIcon: Icon(
                       Icons.phone,
-                      color: Colors.black,
+                      color: Color(0xff333333),
                     ),
                   ),
                 ),
@@ -70,14 +71,14 @@ class Commande extends StatelessWidget {
               Container(
                 //height: 300,
                 child: TextFormField(
-                  initialValue: 'Adresse',
+                  //initialValue: 'Adresse',
                   decoration: InputDecoration(
                     labelText: 'Votre Adresse complete *',
                     //errorText: 'Error message',
                     border: OutlineInputBorder(),
                     suffixIcon: Icon(
                       Icons.home,
-                      color: Colors.black,
+                      color: Color(0xff333333),
                     ),
                   ),
                 ),
@@ -88,14 +89,14 @@ class Commande extends StatelessWidget {
               Container(
                 //height: 300,
                 child: TextFormField(
-                  initialValue: 'Ville',
+                  //initialValue: 'Ville',
                   decoration: InputDecoration(
                     labelText: 'Votre Ville *',
                     //errorText: 'Error message',
                     border: OutlineInputBorder(),
                     suffixIcon: Icon(
                       Icons.location_city,
-                      color: Colors.black,
+                      color: Color(0xff333333),
                     ),
                   ),
                 ),
@@ -106,14 +107,14 @@ class Commande extends StatelessWidget {
               Container(
                 //height: 300,
                 child: TextFormField(
-                  initialValue: 'Téléphone',
+                  //initialValue: 'Téléphone',
                   decoration: InputDecoration(
                     labelText: 'Autre Téléphone',
                     //errorText: 'Error message',
                     border: OutlineInputBorder(),
                     suffixIcon: Icon(
-                      Icons.home,
-                      color: Colors.black,
+                      Icons.phone,
+                      color: Color(0xff333333),
                     ),
                   ),
                 ),
@@ -129,7 +130,7 @@ class Commande extends StatelessWidget {
                         topRight: Radius.circular(10),
                         bottomRight: Radius.circular(10)),
                     side: BorderSide(color: Color(0xFFfef2f2))),
-                color: Colors.orange,
+                color: Color(0xfffb5d04),
                 textColor: Colors.white,
                 child: Text('Enovyer ma commande',
                     style: TextStyle(

@@ -17,6 +17,7 @@ class DetailPage extends StatelessWidget {
     var scaffold2 = Scaffold(
       resizeToAvoidBottomPadding: true,
       appBar: AppBar(
+        backgroundColor: Color(0xfffb5d04),
         title: Text(loadedPdt.name),
       ),
       body: ListView(
@@ -156,7 +157,7 @@ class DetailPage extends StatelessWidget {
                         color: Color(0xFF565656))),
                 Text("${loadedPdt.price} DH".toUpperCase(),
                     style: TextStyle(
-                        color: Colors.orange,
+                        color: Color(0xfffb5d04),
                         //fontFamily: 'Roboto-Light.ttf',
                         fontSize: 20,
                         fontWeight: FontWeight.w500)),
@@ -339,7 +340,7 @@ class _MyCounterState extends State<MyCounter> {
           onPressed: () {
             cart.addItem(productId, loadedPdt.name, loadedPdt.price);
           },
-          color: Colors.orange,
+          color: Color(0xfffb5d04),
           textColor: Colors.white,
           child: Container(
             padding: EdgeInsets.all(16.0),

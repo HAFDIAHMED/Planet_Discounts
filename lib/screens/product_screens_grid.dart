@@ -7,6 +7,7 @@ class PdtSGride extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xfffb5d04),
           title: Text(
             'Articles',
             style:

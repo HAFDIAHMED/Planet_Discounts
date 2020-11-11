@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Color(0xfffb5d04),
           title: Image.asset(
-            'assets/images/planetdiscountslogo1.png',
+            'assets/images/planetdiscountslogo111.png',
             width: 130,
           ),
           actions: <Widget>[
