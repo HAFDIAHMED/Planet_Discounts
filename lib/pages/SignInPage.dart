@@ -46,14 +46,16 @@ class _SignInPageState extends State<SignInPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  /*Container(
-                    width: 230,
-                    height: 100,
-                    alignment: Alignment.center,
+                  Container(
+                    //width: 290,
+                    //height: 150,
+                    alignment: Alignment.topCenter,
                     child: Image.asset(
-                      "assets/images/ic_app_icon.png",
+                      "assets/images/planetdiscountslogo.png",
+                      width: 400,
+                      //height: 300,
                     ),
-                  ),*/
+                  ),
                   SizedBox(
                     height: 15,
                   ),
@@ -78,7 +80,7 @@ class _SignInPageState extends State<SignInPage> {
                           color: Color(0xFF666666),
                           fontFamily: defaultFontFamily,
                           fontSize: defaultFontSize),
-                      hintText: "Numero du Telephone",
+                      hintText: "Téléphone",
                     ),
                   ),
                   SizedBox(
@@ -111,13 +113,13 @@ class _SignInPageState extends State<SignInPage> {
                         fontFamily: defaultFontFamily,
                         fontSize: defaultFontSize,
                       ),
-                      hintText: "Mot de passe",
+                      hintText: "Mot de passe ",
                     ),
                   ),
                   SizedBox(
                     height: 15,
                   ),
-                  Container(
+                  /*Container(
                     width: double.infinity,
                     child: Text(
                       "Forgot your password?",
@@ -129,7 +131,7 @@ class _SignInPageState extends State<SignInPage> {
                       ),
                       textAlign: TextAlign.end,
                     ),
-                  ),
+                  ),*/
                   SizedBox(
                     height: 15,
                   ),
@@ -137,11 +139,11 @@ class _SignInPageState extends State<SignInPage> {
                   SizedBox(
                     height: 2,
                   ),
-                  FacebookGoogleLogin()
+                  //FacebookGoogleLogin()
                 ],
               ),
             ),
-            Flexible(
+            /*Flexible(
               flex: 1,
               child: Align(
                 alignment: Alignment.bottomCenter,
@@ -166,7 +168,7 @@ class _SignInPageState extends State<SignInPage> {
                       },
                       child: Container(
                         child: Text(
-                          "Connecter",
+                          "Rejoindre nous",
                           style: TextStyle(
                             color: Color(0xFFf7418c),
                             fontFamily: defaultFontFamily,
@@ -179,7 +181,7 @@ class _SignInPageState extends State<SignInPage> {
                   ],
                 ),
               ),
-            )
+            )*/
           ],
         ),
       ),
@@ -199,11 +201,11 @@ class SignInButtonWidget extends StatelessWidget {
             color: Color(0xFFfbab66),
           ),
           BoxShadow(
-            color: Colors.orange,
+            color: Color(0xFFf7418c),
           ),
         ],
         gradient: new LinearGradient(
-            colors: [Colors.orange, Color(0xFFfbab66)],
+            colors: [Color(0xFFf7418c), Color(0xFFfbab66)],
             begin: const FractionalOffset(0.2, 0.2),
             end: const FractionalOffset(1.0, 1.0),
             stops: [0.0, 1.0],
@@ -211,13 +213,13 @@ class SignInButtonWidget extends StatelessWidget {
       ),
       child: MaterialButton(
           highlightColor: Colors.transparent,
-          splashColor: Colors.orangeAccent,
+          splashColor: Color(0xFFf7418c),
           //shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5.0))),
           child: Padding(
             padding:
                 const EdgeInsets.symmetric(vertical: 10.0, horizontal: 42.0),
             child: Text(
-              "Rejoindre Nous",
+              "Connecter",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 25.0,
@@ -299,7 +301,7 @@ class FacebookGoogleLogin extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   decoration: new BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.orange,
+                    color: Color(0xFFf7418c),
                   ),
                   child: Icon(
                     FontAwesomeIcons.facebookF,
@@ -316,7 +318,7 @@ class FacebookGoogleLogin extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   decoration: new BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.orangeAccent,
+                    color: Color(0xFFf7418c),
                   ),
                   child: new Icon(
                     FontAwesomeIcons.google,
