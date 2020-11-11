@@ -29,7 +29,7 @@ class CartPdt extends StatelessWidget {
             children: [
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.white,
+                  backgroundColor: Colors.blue,
                   /*child: Image.asset(
                     'assets/images/EMiLac.jpg',
                     width: 30,
