@@ -15,6 +15,7 @@ class CartPdt extends StatelessWidget {
       key: ValueKey(id),
       direction: DismissDirection.endToStart,
       background: Container(
+        child: Icon(Icons.restore_from_trash),
         color: Colors.red,
       ),
       onDismissed: (direction) {

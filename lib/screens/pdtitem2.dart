@@ -55,7 +55,7 @@ class PdtItem2 extends StatelessWidget {
                   Container(
                     alignment: Alignment.bottomLeft,
                     padding: EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Text(" ${pdt.price} DH",
+                    child: Text(" ${pdt.price} DH ",
                         style: TextStyle(
                             color: (pdt.price != null)
                                 ? Color(0xFFf67426)
