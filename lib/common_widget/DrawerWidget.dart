@@ -3,14 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:MYAPP/main.dart';
 import '../screens/contact.dart';
+//import '../screens/signup.dart';
 import '../screens/commandes.dart';
-import '../screens/notifications.dart';
 import '../widgets/semilac.dart';
-import '../screens/product_screens_grid.dart';
-import '../screens/allpdts2.dart';
-import '../models/brand.dart';
-import '../screens/commandes.dart';
-import '../screens/liste_category.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -39,14 +34,14 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'Catégories',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ListCategory()),
+                      MaterialPageRoute(builder: (context) => SEMILAC()),
                     )),
             _createDrawerItem(
                 icon: FontAwesomeIcons.productHunt,
                 text: 'Produits',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PdtSGride()),
+                      MaterialPageRoute(builder: (context) => SEMILAC()),
                     )),
             _createDrawerItem(
                 icon: Icons.shopping_basket,
@@ -57,10 +52,10 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
-                text: 'Marques/Brands',
+                text: 'Nos Marques',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Brand()),
+                      MaterialPageRoute(builder: (context) => SEMILAC()),
                     )),
             _createDrawerItem(
                 icon: Icons.call,
@@ -69,9 +64,6 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                       context,
                       MaterialPageRoute(builder: (context) => Contact()),
                     )),
-            SizedBox(
-              height: 90,
-            ),
             Center(
               child: Wrap(
                 direction: Axis.horizontal,

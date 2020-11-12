@@ -112,8 +112,7 @@ class _CheckoutButtonState extends State<CheckoutButton> {
       onPressed: widget.cart.totalAmount <= 0
           ? null
           : () async {
-              await Provider.of<Orders>(context, listen: false).addOrder(
-                  widget.cart.items.values.toList(), widget.cart.totalAmount);
+              //await Provider.of<Orders>(context, listen: false).addOrder(widget.cart.items.values.toList(), widget.cart.totalAmount);
               widget.cart.clear();
               Navigator.push(
                 context,

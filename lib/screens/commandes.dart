@@ -152,15 +152,15 @@ showAlertDialog(BuildContext context) {
   Widget cancelButton = FlatButton(
     child: Text("Cancel"),
     onPressed: () => {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Commande()),
-      )
+      Navigator.of(context, rootNavigator: true).pop(AlertDialog),
+      //Navigator.push(context,MaterialPageRoute(builder: (context) => Commande())),
+      //Navigator.of(context, rootNavigator: true).pop('alert'),
     },
   );
   Widget continueButton = FlatButton(
     child: Text("Continue"),
     onPressed: () => {
+      Navigator.of(context, rootNavigator: true).pop(AlertDialog),
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => SEMILAC()),
