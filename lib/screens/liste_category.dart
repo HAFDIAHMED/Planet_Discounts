@@ -32,34 +32,54 @@ class ListCategory extends StatelessWidget {
                     title: Text('Vétéments'),
                   ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (5).png'),
-                  title: Text('Sac et bagages'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/images/topmenu/ic_bag (5).png'),
+                    title: Text('Sac et bagages'),
+                  ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (4).png'),
-                  title: Text('sac'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/images/topmenu/ic_bag (4).png'),
+                    title: Text('sac'),
+                  ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (3).png'),
-                  title: Text('Ordinateurs'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/images/topmenu/ic_bag (3).png'),
+                    title: Text('Ordinateurs'),
+                  ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (2).png'),
-                  title: Text('Livres'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/images/topmenu/ic_bag (2).png'),
+                    title: Text('Livres'),
+                  ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (1).png'),
-                  title: Text('Accesoires'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/images/topmenu/ic_bag (1).png'),
+                    title: Text('Accesoires'),
+                  ),
                 ),
-                ListTile(
-                  leading:
-                      Image.asset('assets/icons/icons8-face-powder-100.png'),
-                  title: Text('Make up'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/icons/icons8-face-powder-100.png'),
+                    title: Text('Make up'),
+                  ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (6).png'),
-                  title: Text('autres'),
+                Card(
+                  child: ListTile(
+                    leading:
+                        Image.asset('assets/images/topmenu/ic_bag (6).png'),
+                    title: Text('autres'),
+                  ),
                 ),
               ],
             ),
