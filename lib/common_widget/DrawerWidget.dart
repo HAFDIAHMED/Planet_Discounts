@@ -10,6 +10,7 @@ import '../screens/product_screens_grid.dart';
 import '../screens/allpdts2.dart';
 import '../models/brand.dart';
 import '../screens/commandes.dart';
+import '../screens/liste_category.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -38,7 +39,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'Catégories',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                      MaterialPageRoute(builder: (context) => ListCategory()),
                     )),
             _createDrawerItem(
                 icon: FontAwesomeIcons.productHunt,

@@ -15,27 +15,56 @@ class ListCategory extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Center(
-                child: Text(
-                  'Categories',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ListView(
+              children: <Widget>[
+                Center(
+                  child: Text(
+                    'Categories',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              ListTile(
-                leading: Icon(Icons.wb_sunny),
-                title: Text('Sun'),
-              ),
-              ListTile(
-                leading: Icon(Icons.brightness_3),
-                title: Text('Moon'),
-              ),
-              ListTile(
-                leading: Icon(Icons.star),
-                title: Text('Star'),
-              ),
-            ],
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (6).png',
+                      width: 50),
+                  title: Text('Vétéments'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (5).png'),
+                  title: Text('Sac et bagages'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (4).png'),
+                  title: Text('sac'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (3).png'),
+                  title: Text('Ordinateurs'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (2).png'),
+                  title: Text('Livres'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (1).png'),
+                  title: Text('Accesoires'),
+                ),
+                ListTile(
+                  leading:
+                      Image.asset('assets/icons/icons8-face-powder-100.png'),
+                  title: Text('Make up'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (6).png'),
+                  title: Text('Star'),
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/topmenu/ic_bag (6).png'),
+                  title: Text('Star'),
+                ),
+              ],
+            ),
           ),
         ));
   }
