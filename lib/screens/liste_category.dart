@@ -25,10 +25,12 @@ class ListCategory extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (6).png',
-                      width: 50),
-                  title: Text('Vétéments'),
+                Card(
+                  child: ListTile(
+                    leading: Image.asset('assets/images/topmenu/ic_bag (6).png',
+                        width: 50),
+                    title: Text('Vétéments'),
+                  ),
                 ),
                 ListTile(
                   leading: Image.asset('assets/images/topmenu/ic_bag (5).png'),
@@ -57,11 +59,7 @@ class ListCategory extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Image.asset('assets/images/topmenu/ic_bag (6).png'),
-                  title: Text('Star'),
-                ),
-                ListTile(
-                  leading: Image.asset('assets/images/topmenu/ic_bag (6).png'),
-                  title: Text('Star'),
+                  title: Text('autres'),
                 ),
               ],
             ),

@@ -6,6 +6,7 @@ import '../widgets/srearchBar.dart';
 import '../common_widget/TopPromoSlider.dart';
 import '../screens/product_screens_grid.dart';
 import '../common_widget/TopMenu.dart';
+import '../screens/liste_category.dart';
 
 class HomeBody extends StatelessWidget {
   @override
@@ -113,7 +114,7 @@ class TousCategory extends StatelessWidget {
               recognizer: TapGestureRecognizer()
                 ..onTap = () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PdtSGride()),
+                      MaterialPageRoute(builder: (context) => ListCategory()),
                     ),
             ),
           ),
