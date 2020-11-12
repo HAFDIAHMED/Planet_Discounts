@@ -8,7 +8,7 @@ class ListCategory extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Color(0xfffb5d04),
           title: Text(
-            ' Catégories',
+            ' Catégories/Articles',
             style:
                 TextStyle(fontSize: 30, color: Theme.of(context).accentColor),
           ),
@@ -17,6 +17,12 @@ class ListCategory extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ListView(
             children: <Widget>[
+              Center(
+                child: Text(
+                  'Categories',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+              ),
               ListTile(
                 leading: Icon(Icons.wb_sunny),
                 title: Text('Sun'),
