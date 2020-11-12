@@ -77,7 +77,7 @@ class ListCategory extends StatelessWidget {
                 Card(
                   child: ListTile(
                     leading:
-                        Image.asset('assets/images/topmenu/ic_bag (6).png'),
+                        Image.asset('assets/images/topmenu/ic_bag (66).png'),
                     title: Text('autres'),
                   ),
                 ),
