@@ -3,6 +3,7 @@ import '../models/products.dart';
 import 'package:provider/provider.dart';
 import '../models/products.dart';
 import '../models/cart.dart';
+import '../screens/homepage.dart';
 import '../screens/contact.dart';
 import 'package:gradual_stepper/gradual_stepper.dart';
 
@@ -296,7 +297,7 @@ class _MyCounterState extends State<MyCounter> {
             setState(() {
               if (_currentAmount > 0) {
                 _currentAmount -= 1;
-                cart.removeItem(productId);
+                //cart.removeItem(productId);
               }
             });
           },
@@ -322,7 +323,7 @@ class _MyCounterState extends State<MyCounter> {
           onTap: () {
             setState(() {
               _currentAmount += 1;
-              cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+              //cart.addItem(productId, loadedPdt.name, loadedPdt.price);
             });
           },
         ),
@@ -338,7 +339,11 @@ class _MyCounterState extends State<MyCounter> {
                   bottomRight: Radius.circular(10)),
               side: BorderSide(color: Color(0xFFfef2f2))),
           onPressed: () {
-            cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+            for (int i = 0; i < _currentAmount; i++) {
+              cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+            }
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
           },
           color: Color(0xfffb5d04),
           textColor: Colors.white,
