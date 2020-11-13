@@ -47,7 +47,7 @@ class Contact extends StatelessWidget {
           MaterialPageRoute(builder: (context) => SEMILAC()),
         ),
         child: Icon(
-          Icons.send,
+          Icons.phone,
           color: Colors.white,
           size: 25,
         ),

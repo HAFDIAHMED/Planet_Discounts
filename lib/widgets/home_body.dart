@@ -64,7 +64,7 @@ class TousPdt extends StatelessWidget {
           ),*/
           RichText(
             text: TextSpan(
-              text: 'see all(54)',
+              text: 'See All(54)',
               style: TextStyle(
                   fontSize: 16,
                   color: Colors.blue[400],
@@ -106,7 +106,7 @@ class TousCategory extends StatelessWidget {
           )*/
           RichText(
             text: TextSpan(
-              text: 'see all(23)',
+              text: 'See All(23)',
               style: TextStyle(
                   fontSize: 16,
                   color: Colors.blue[400],
