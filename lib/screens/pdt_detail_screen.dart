@@ -308,7 +308,7 @@ class _MyCounterState extends State<MyCounter> {
           //style: Theme.of(context).textTheme.title,
         ),
         SizedBox(width: 15),
-        .
+
         GestureDetector(
           child: Container(
             padding: const EdgeInsets.all(5.0),

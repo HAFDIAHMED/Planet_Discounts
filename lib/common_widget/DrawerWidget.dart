@@ -6,6 +6,10 @@ import '../screens/contact.dart';
 //import '../screens/signup.dart';
 import '../screens/commandes.dart';
 import '../widgets/semilac.dart';
+import '../screens/liste_category.dart';
+import '../common_widget/GridTilesProducts.dart';
+import '../screens/product_screens_grid.dart';
+import '../models/brand.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -34,14 +38,14 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'Catégories',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                      MaterialPageRoute(builder: (context) => ListCategory()),
                     )),
             _createDrawerItem(
                 icon: FontAwesomeIcons.productHunt,
                 text: 'Produits',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                      MaterialPageRoute(builder: (context) => PdtSGride()),
                     )),
             _createDrawerItem(
                 icon: Icons.shopping_basket,
@@ -52,10 +56,10 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
-                text: 'Nos Marques',
+                text: 'Marques/Brnads',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SEMILAC()),
+                      MaterialPageRoute(builder: (context) => Brand()),
                     )),
             _createDrawerItem(
                 icon: Icons.call,
