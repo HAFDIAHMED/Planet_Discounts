@@ -27,6 +27,9 @@ dependencies:
 
   stepper_touch: ^0.0.1
   gradual_stepper:
+  flutter_sparkline: "^0.1.0"
+  flutter_staggered_grid_view: "^0.3.0"
+  flutter_circular_chart: ^0.1.0
 
 
   font_awesome_flutter: ^8.8.1
@@ -101,6 +104,12 @@ flutter:
      - assets/images/brand (3).jpg
      - assets/images/brand (4).jpg
      - assets/images/brand (5).jpg
+     - assets/images/logo.png
+     - assets/images/powered_by.png
+     - assets/images/email_icon.png
+     - assets/images/password_icon.png
+     - assets/images/user_icon.png
+     - assets/images/as.png
      
 
       
