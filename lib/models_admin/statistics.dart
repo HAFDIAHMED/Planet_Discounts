@@ -3,6 +3,9 @@ import 'package:flutter_sparkline/flutter_sparkline.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../models_admin/drawerWidget.dart';
+
+import '../models_admin/profilepage.dart';
 
 class Stats extends StatelessWidget {
   // This widget is the root of your application.
@@ -268,7 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: DrawerWidget(),
+      drawer: DrawerWidgetADMIN(),
       appBar: AppBar(
         title: Text(widget.title),
         actions: <Widget>[

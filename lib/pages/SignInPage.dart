@@ -6,6 +6,7 @@ import '../animation/ScaleRoute.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../widgets/semilac.dart';
+import '../models_admin/statistics.dart';
 
 class SignInPage extends StatefulWidget {
   @override
@@ -229,7 +230,7 @@ class SignInButtonWidget extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SEMILAC()),
+              MaterialPageRoute(builder: (context) => Stats()),
             );
           }),
     );
