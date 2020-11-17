@@ -10,8 +10,7 @@ class PdtSGride extends StatelessWidget {
           backgroundColor: Color(0xfffb5d04),
           title: Text(
             'Articles',
-            style:
-                TextStyle(fontSize: 30, color: Theme.of(context).accentColor),
+            style: TextStyle(fontSize: 30, color: Colors.black),
           ),
         ),
         body: ListView(

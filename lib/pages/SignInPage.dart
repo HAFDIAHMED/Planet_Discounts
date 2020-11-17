@@ -230,7 +230,7 @@ class SignInButtonWidget extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Stats()),
+              MaterialPageRoute(builder: (context) => SEMILAC()),
             );
           }),
     );
