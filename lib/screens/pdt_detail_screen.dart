@@ -371,7 +371,7 @@ class _MyCounterState extends State<MyCounter> {
             for (int i = 0; i < _currentAmount; i++) {
               cart.addItem(productId, loadedPdt.name, loadedPdt.price);
             }
-
+            _showToast(context);
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => HomePage()));
           },
