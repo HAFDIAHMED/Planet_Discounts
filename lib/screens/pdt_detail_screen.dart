@@ -367,13 +367,11 @@ class _MyCounterState extends State<MyCounter> {
                   topRight: Radius.circular(10),
                   bottomRight: Radius.circular(10)),
               side: BorderSide(color: Color(0xFFfef2f2))),
-          onPressed: () {
+          onPressed: () async {
             for (int i = 0; i < _currentAmount; i++) {
               cart.addItem(productId, loadedPdt.name, loadedPdt.price);
             }
             _showToast(context);
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomePage()));
           },
           color: Color(0xfffb5d04),
           textColor: Colors.white,
@@ -395,7 +393,7 @@ void _showToast(BuildContext context) {
   final scaffold = Scaffold.of(context);
   scaffold.showSnackBar(
     SnackBar(
-      content: const Text('Added to favorite'),
+      content: const Text('produit ajouté au panier'),
       action: SnackBarAction(
           label: 'UNDO', onPressed: scaffold.hideCurrentSnackBar),
     ),

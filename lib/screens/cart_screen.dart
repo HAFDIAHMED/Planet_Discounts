@@ -58,17 +58,6 @@ class CartScreen extends StatelessWidget {
               ),
             ],
           ),
-          /*CheckoutButton(
-            cart: cart,
-          ),*/
-
-          // FlatButton(
-          //     onPressed: () {
-          //     },
-          //     child: Text(
-          //       'Checkout',
-          //       style: TextStyle(color: Colors.blue, fontSize: 20),
-          //     ))
         ],
       ),
       /*floatingActionButton: FloatingActionButton(
