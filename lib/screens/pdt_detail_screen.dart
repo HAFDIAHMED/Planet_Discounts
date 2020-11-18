@@ -264,7 +264,7 @@ class DetailPage extends StatelessWidget {
           SpeedDialChild(
             child: Icon(Icons.add_shopping_cart),
             backgroundColor: Color(0xfffb5d04),
-            label: 'Achetr Maintenant',
+            label: 'Acheter Maintenant',
             labelStyle: TextStyle(fontSize: 18.0),
             onTap: () => {
               Navigator.push(

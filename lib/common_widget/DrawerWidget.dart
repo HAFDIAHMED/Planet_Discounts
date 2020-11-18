@@ -64,7 +64,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
-                text: 'Marques/Brnads',
+                text: 'Marques/Brands',
                 onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => Brand()),
