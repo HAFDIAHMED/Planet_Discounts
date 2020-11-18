@@ -9,6 +9,7 @@ import 'package:gradual_stepper/gradual_stepper.dart';
 import '../screens/commandes.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:MYAPP/screens/cart_screen.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class DetailPage extends StatelessWidget {
   static const routeName = '/product-detail';
@@ -388,4 +389,15 @@ class _MyCounterState extends State<MyCounter> {
       ],
     );
   }
+}
+
+void _showToast(BuildContext context) {
+  final scaffold = Scaffold.of(context);
+  scaffold.showSnackBar(
+    SnackBar(
+      content: const Text('Added to favorite'),
+      action: SnackBarAction(
+          label: 'UNDO', onPressed: scaffold.hideCurrentSnackBar),
+    ),
+  );
 }
