@@ -6,6 +6,7 @@ import '../models/cart.dart';
 import '../screens/homepage.dart';
 import '../screens/contact.dart';
 import 'package:gradual_stepper/gradual_stepper.dart';
+import '../screens/commandes.dart';
 
 class DetailPage extends StatelessWidget {
   static const routeName = '/product-detail';
@@ -214,6 +215,30 @@ class DetailPage extends StatelessWidget {
                   onChanged: (_) {},
                 ),
               ],
+            ),
+          ),
+          RaisedButton(
+            elevation: 0,
+            shape: new RoundedRectangleBorder(
+                borderRadius: new BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                    bottomRight: Radius.circular(10)),
+                side: BorderSide(color: Color(0xFFfef2f2))),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Commande()));
+            },
+            color: Color(0xfffb5d04),
+            textColor: Colors.white,
+            child: Container(
+              padding: EdgeInsets.all(16.0),
+              child: Text("Acheter Maintenant".toUpperCase(),
+                  style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.black)),
             ),
           ),
           SizedBox(
