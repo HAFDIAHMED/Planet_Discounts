@@ -217,7 +217,7 @@ class DetailPage extends StatelessWidget {
               ],
             ),
           ),
-          RaisedButton(
+          /*RaisedButton(
             elevation: 0,
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.only(
@@ -240,7 +240,7 @@ class DetailPage extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       color: Colors.black)),
             ),
-          ),
+          ), */
           SizedBox(
             height: 10,
           ),
@@ -273,7 +273,7 @@ class DetailPage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Colors.black,
+        //backgroundColor: Colors.black,
         onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => Commande()),
@@ -281,7 +281,7 @@ class DetailPage extends StatelessWidget {
         label: Text("Acheter Maintenant"),
         icon: Icon(
           Icons.add_shopping_cart,
-          color: Colors.white,
+          //color: Colors.white,
           size: 25,
         ),
       ),
