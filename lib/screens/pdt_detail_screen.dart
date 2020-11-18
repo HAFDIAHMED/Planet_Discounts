@@ -8,6 +8,7 @@ import '../screens/contact.dart';
 import 'package:gradual_stepper/gradual_stepper.dart';
 import '../screens/commandes.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:MYAPP/screens/cart_screen.dart';
 
 class DetailPage extends StatelessWidget {
   static const routeName = '/product-detail';
@@ -196,30 +197,6 @@ class DetailPage extends StatelessWidget {
               ],
             ),
           ),
-          /*RaisedButton(
-            elevation: 0,
-            shape: new RoundedRectangleBorder(
-                borderRadius: new BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    bottomLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
-                    bottomRight: Radius.circular(10)),
-                side: BorderSide(color: Color(0xFFfef2f2))),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Commande()));
-            },
-            color: Color(0xfffb5d04),
-            textColor: Colors.white,
-            child: Container(
-              padding: EdgeInsets.all(16.0),
-              child: Text("Acheter Maintenant".toUpperCase(),
-                  style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.black)),
-            ),
-          ), */
           SizedBox(
             height: 10,
           ),
@@ -257,36 +234,44 @@ class DetailPage extends StatelessWidget {
         marginBottom: 20,
         animatedIcon: AnimatedIcons.menu_close,
         animatedIconTheme: IconThemeData(size: 22.0),
-        // this is ignored if animatedIcon is non null
-        // child: Icon(Icons.add),
+
         //visible: _dialVisible,
-        // If true user is forced to close dial manually
-        // by tapping main button and overlay is not rendered.
+
         closeManually: false,
         curve: Curves.bounceIn,
         overlayColor: Colors.black,
         overlayOpacity: 0.5,
-        onOpen: () => print('OPENING DIAL'),
-        onClose: () => print('DIAL CLOSED'),
+        onOpen: () => {},
+        onClose: () => {},
         tooltip: 'Speed Dial',
         heroTag: 'speed-dial-hero-tag',
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
         elevation: 8.0,
         shape: CircleBorder(),
         children: [
           SpeedDialChild(
-              child: Icon(Icons.accessibility),
-              backgroundColor: Colors.red,
-              label: 'First',
+              child: Icon(Icons.shopping_cart),
+              backgroundColor: Colors.orange,
+              label: 'Mon Panier',
               labelStyle: TextStyle(fontSize: 18.0),
-              onTap: () => print('FIRST CHILD')),
+              onTap: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CartScreen()),
+                    )
+                  }),
           SpeedDialChild(
-            child: Icon(Icons.brush),
-            backgroundColor: Colors.blue,
-            label: 'Second',
+            child: Icon(Icons.add_shopping_cart),
+            backgroundColor: Color(0xfffb5d04),
+            label: 'Achetr Maintenant',
             labelStyle: TextStyle(fontSize: 18.0),
-            onTap: () => print('SECOND CHILD'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Commande()),
+              )
+            },
           ),
         ],
       ),
@@ -371,8 +356,7 @@ class _MyCounterState extends State<MyCounter> {
             });
           },
         ),
-        //Spacer(),
-        //SizedBox(width: 30),
+
         RaisedButton(
           elevation: 0,
           shape: new RoundedRectangleBorder(
