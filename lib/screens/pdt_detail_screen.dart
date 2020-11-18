@@ -7,6 +7,7 @@ import '../screens/homepage.dart';
 import '../screens/contact.dart';
 import 'package:gradual_stepper/gradual_stepper.dart';
 import '../screens/commandes.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 class DetailPage extends StatelessWidget {
   static const routeName = '/product-detail';
@@ -49,34 +50,12 @@ class DetailPage extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          /*Container(
-            color: Colors.transparent,
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                boxShadow: [BoxShadow(blurRadius: 5, color: Colors.blueGrey)],
-              ),
-              child: new Center(
-                  child: new Text(
-                'Price: \$${loadedPdt.price}',
-                style: TextStyle(
-                  fontSize: 30,
-                ),
-              )),
-            ),
-          ),*/
           Container(
             padding: EdgeInsets.only(left: 15, right: 15, top: 20, bottom: 20),
             color: Color(0xFFFFFFFF),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                /*Text("Produit:".toUpperCase(),
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xFF565656))),*/
                 Text(loadedPdt.name,
                     style: TextStyle(
                         fontSize: 16,
@@ -272,18 +251,44 @@ class DetailPage extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        //backgroundColor: Colors.black,
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => Commande()),
-        ),
-        label: Text("Acheter Maintenant"),
-        icon: Icon(
-          Icons.add_shopping_cart,
-          //color: Colors.white,
-          size: 25,
-        ),
+      floatingActionButton: SpeedDial(
+        // both default to 16
+        marginRight: 18,
+        marginBottom: 20,
+        animatedIcon: AnimatedIcons.menu_close,
+        animatedIconTheme: IconThemeData(size: 22.0),
+        // this is ignored if animatedIcon is non null
+        // child: Icon(Icons.add),
+        //visible: _dialVisible,
+        // If true user is forced to close dial manually
+        // by tapping main button and overlay is not rendered.
+        closeManually: false,
+        curve: Curves.bounceIn,
+        overlayColor: Colors.black,
+        overlayOpacity: 0.5,
+        onOpen: () => print('OPENING DIAL'),
+        onClose: () => print('DIAL CLOSED'),
+        tooltip: 'Speed Dial',
+        heroTag: 'speed-dial-hero-tag',
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 8.0,
+        shape: CircleBorder(),
+        children: [
+          SpeedDialChild(
+              child: Icon(Icons.accessibility),
+              backgroundColor: Colors.red,
+              label: 'First',
+              labelStyle: TextStyle(fontSize: 18.0),
+              onTap: () => print('FIRST CHILD')),
+          SpeedDialChild(
+            child: Icon(Icons.brush),
+            backgroundColor: Colors.blue,
+            label: 'Second',
+            labelStyle: TextStyle(fontSize: 18.0),
+            onTap: () => print('SECOND CHILD'),
+          ),
+        ],
       ),
       bottomNavigationBar: MyCounter(),
     );
