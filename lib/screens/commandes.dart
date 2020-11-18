@@ -5,6 +5,7 @@ class Commande extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomPadding: false,
         appBar: AppBar(
           backgroundColor: Color(0xfffb5d04),
           title: Text(
