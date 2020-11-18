@@ -10,6 +10,7 @@ import '../screens/liste_category.dart';
 import '../common_widget/GridTilesProducts.dart';
 import '../screens/product_screens_grid.dart';
 import '../models/brand.dart';
+import '../models/Livraison.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -53,6 +54,13 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => CartScreen()),
+                    )),
+            _createDrawerItem(
+                icon: Icons.motorcycle,
+                text: 'livraison',
+                onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Livraison()),
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
