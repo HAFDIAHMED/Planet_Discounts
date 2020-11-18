@@ -272,6 +272,19 @@ class DetailPage extends StatelessWidget {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.black,
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Commande()),
+        ),
+        label: Text("Acheter Maintenant"),
+        icon: Icon(
+          Icons.add_shopping_cart,
+          color: Colors.white,
+          size: 25,
+        ),
+      ),
       bottomNavigationBar: MyCounter(),
     );
     var scaffold = scaffold2;
