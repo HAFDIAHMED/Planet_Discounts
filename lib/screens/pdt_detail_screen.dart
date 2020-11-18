@@ -370,10 +370,7 @@ class _MyCounterState extends State<MyCounter> {
             for (int i = 0; i < _currentAmount; i++) {
               cart.addItem(productId, loadedPdt.name, loadedPdt.price);
             }
-            Scaffold.of(context).showSnackBar(SnackBar(
-              duration: Duration(seconds: 3),
-              content: Text('produit ajouté au panier'),
-            ));
+
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => HomePage()));
           },
