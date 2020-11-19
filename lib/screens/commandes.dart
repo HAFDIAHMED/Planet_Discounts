@@ -106,12 +106,6 @@ class Commande extends StatelessWidget {
                 height: 30,
               ),
               Container(
-                child: PromoCodeWidget(),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Container(
                 //height: 300,
                 child: TextFormField(
                   //initialValue: 'Téléphone',
@@ -125,6 +119,12 @@ class Commande extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                child: PromoCodeWidget(),
               ),
               SizedBox(
                 height: 30,
@@ -217,7 +217,7 @@ class PromoCodeWidget extends StatelessWidget {
                   borderSide: BorderSide(color: Color(0xFFe6e1e1), width: 1.0),
                   borderRadius: BorderRadius.circular(7)),
               fillColor: Colors.white,
-              hintText: 'Add Your Promo Code',
+              hintText: 'Ajouter votre code coupon',
               filled: true,
               suffixIcon: IconButton(
                   icon: Icon(
