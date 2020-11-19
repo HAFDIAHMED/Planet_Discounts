@@ -11,6 +11,7 @@ import '../common_widget/GridTilesProducts.dart';
 import '../screens/product_screens_grid.dart';
 import '../models/brand.dart';
 import '../models/Livraison.dart';
+import '../models/livraison_frais.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -60,7 +61,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'livraison',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Livraison()),
+                      MaterialPageRoute(builder: (context) => Frais()),
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
