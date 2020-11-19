@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../models/livraison_frais.dart';
 
 class Livraison extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final title = "Les frais de Livraison";
+    final title = "La Livraison";
 
     List choices = const [
       const Choice(
@@ -87,6 +88,32 @@ class ChoiceCard extends StatelessWidget {
                 children: [
                   Text(choice.title, style: Theme.of(context).textTheme.title),
                   Text(choice.description),
+                  RaisedButton(
+                    elevation: 0,
+                    shape: new RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.only(
+                            topLeft: Radius.circular(10),
+                            bottomLeft: Radius.circular(10),
+                            topRight: Radius.circular(10),
+                            bottomRight: Radius.circular(10)),
+                        side: BorderSide(color: Color(0xFFfef2f2))),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Frais()),
+                      );
+                    },
+                    color: Color(0xfffb5d04),
+                    textColor: Colors.white,
+                    child: Container(
+                      padding: EdgeInsets.all(16.0),
+                      child: Text("Voir les frais".toUpperCase(),
+                          style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.black)),
+                    ),
+                  ),
                 ],
               ),
             )

@@ -61,7 +61,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'livraison',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Frais()),
+                      MaterialPageRoute(builder: (context) => Livraison()),
                     )),
             _createDrawerItem(
                 icon: Icons.branding_watermark,
