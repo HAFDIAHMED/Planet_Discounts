@@ -85,7 +85,7 @@ class _CheckoutButtonState extends State<CheckoutButton> {
           side: BorderSide(color: Color(0xFFfef2f2))),
       color: Color(0xfffb5d04),
       textColor: Colors.white,
-      child: Text('Commander',
+      child: Text('Valider la Commander',
           style: TextStyle(
               fontSize: 15, fontWeight: FontWeight.w400, color: Colors.black)),
       onPressed: widget.cart.totalAmount <= 0
