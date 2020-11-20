@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: Stepper(
+        type: StepperType.horizontal,
         steps: _mySteps(),
         currentStep: this._currentStep,
         onStepTapped: (step) {
