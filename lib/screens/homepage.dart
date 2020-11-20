@@ -67,8 +67,8 @@ class HomePage extends StatelessWidget {
         onClose: () => {},
         tooltip: 'Speed Dial',
         heroTag: 'speed-dial-hero-tag',
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
         elevation: 8.0,
         shape: CircleBorder(),
         children: [

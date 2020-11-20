@@ -37,6 +37,7 @@ class PdtItem2 extends StatelessWidget {
                 children: <Widget>[
                   Image.network(
                     pdt.imgUrl,
+                    fit: BoxFit.fitWidth,
                     //width: 100,
                     height: 100,
                   ),
@@ -68,51 +69,6 @@ class PdtItem2 extends StatelessWidget {
               ),
             )),
       ),
-/////////////
-
-      /*child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
-                  spreadRadius: 10,
-                  blurRadius: 5,
-
-                  offset: Offset(0, 7), // changes position of shadow
-                ),
-              ],
-            ),
-            child: GridTile(
-                child: Container(
-                  width: 200,
-                  margin: EdgeInsets.all(10),
-                  child: Image.network(imageUrl),
-                ),
-
-                //Image.network(imageUrl),
-                footer: GridTileBar(
-                  title:
-                      Text(pdt.category, style: TextStyle(color: Colors.black)),
-                  /* trailing: 
-                  IconButton(
-                      icon: Icon(
-                        Icons.add_shopping_cart,
-                        color: Colors.black,
-                      ),
-                      onPressed: () {
-                        Scaffold.of(context).showSnackBar(SnackBar(
-                          duration: Duration(seconds: 3),
-                          content: Text('produit ajouté au panier'),
-                        ));
-                        cart.addItem(pdt.id, pdt.name, pdt.price);
-                      }),
-                  backgroundColor: Colors.orange, */
-                )),
-          ),
-        )*/
     );
   }
 }

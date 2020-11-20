@@ -26,12 +26,3 @@ class PdtSGride extends StatelessWidget {
         ));
   }
 }
-/*ListView(
-      children: <Widget>[
-        Text(
-          'Produits',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        ),
-        AllProducts()
-      ],
-    )*/
