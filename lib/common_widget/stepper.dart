@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
               this._currentStep = this._currentStep + 1;
             } else {
               //Logic to check if everything is completed
-              print('Completed, check fields.');
+              //print('Completed, check fields.');
             }
           });
         },
