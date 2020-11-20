@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:steppers/steppers.dart';
 import '../models/livraison_frais.dart';
+import 'package:flutter/gestures.dart';
+import '../screens/commandes.dart';
+import '../models/cart_bank.dart';
+import '../models/facture.dart';
 
 class Tree extends StatelessWidget {
   @override
@@ -10,7 +14,7 @@ class Tree extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Stepper Tutorial'),
+      home: new MyHomePage(title: 'validation de la commande'),
     );
   }
 }
@@ -81,12 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       Step(
         title: Text('Paiement', style: TextStyle(fontSize: 10)),
-        content: TextField(),
+        content: CartBank(),
         isActive: _currentStep >= 1,
       ),
       Step(
         title: Text('Résumé', style: TextStyle(fontSize: 10)),
-        content: TextField(),
+        content: Facture(),
         isActive: _currentStep >= 2,
       )
     ];
@@ -109,40 +113,109 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        ListTile(
-          title: const Text('www.javatpoint.com'),
-          leading: Radio(
-            value: BestTutorSite.javatpoint,
-            groupValue: _site,
-            onChanged: (BestTutorSite value) {
-              setState(() {
-                _site = value;
-              });
-            },
+        Container(
+          padding: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(
+                "Détails s'address",
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Color(0xFF3a3a3b),
+                    fontWeight: FontWeight.w300),
+              ),
+              RichText(
+                text: TextSpan(
+                  text: 'Changer',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.orange,
+                      fontWeight: FontWeight.bold),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Commande()),
+                        ),
+                ),
+              ),
+            ],
           ),
         ),
-        ListTile(
-          title: const Text('www.w3school.com'),
-          leading: Radio(
-            value: BestTutorSite.w3schools,
-            groupValue: _site,
-            onChanged: (BestTutorSite value) {
-              setState(() {
-                _site = value;
-              });
-            },
+        Container(
+          padding: EdgeInsets.only(left: 15, right: 15, top: 20, bottom: 20),
+          color: Color(0xFFFFFFFF),
+          child: Column(
+            children: <Widget>[
+              ListTile(
+                title: Text(
+                  "Mr Samir  client ",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Ville X , Quartier Y\n +212666666666"),
+              ),
+            ],
           ),
         ),
-        ListTile(
-          title: const Text('www.tutorialandexample.com'),
-          leading: Radio(
-            value: BestTutorSite.tutorialandexample,
-            groupValue: _site,
-            onChanged: (BestTutorSite value) {
-              setState(() {
-                _site = value;
-              });
-            },
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          padding: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(
+                "Sélectionnez une méthode de livraison",
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Color(0xFF3a3a3b),
+                    fontWeight: FontWeight.w300),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.only(left: 15, right: 15, top: 20, bottom: 20),
+          color: Colors.blueGrey[100],
+          child: ListTile(
+            title: const Text('Livraison dans Casablanca'),
+            subtitle: const Text(
+                'Livré entre la date depart et la date fin.\n Frais de livraison : 19 DH'),
+            leading: Radio(
+              value: BestTutorSite.javatpoint,
+              groupValue: _site,
+              onChanged: (BestTutorSite value) {
+                setState(() {
+                  _site = value;
+                });
+              },
+            ),
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.only(left: 15, right: 15, top: 20, bottom: 20),
+          child: ListTile(
+            title: const Text('Livraison hors de  Casablanca'),
+            subtitle: const Text(
+                'Livré entre la date depart et la date fin.\n Frais de livraison : 29 DH'),
+            leading: Radio(
+              value: BestTutorSite.w3schools,
+              groupValue: _site,
+              onChanged: (BestTutorSite value) {
+                setState(() {
+                  _site = value;
+                });
+              },
+            ),
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.only(left: 15, right: 15, top: 20, bottom: 20),
+          color: Color(0xFFFFFFFF),
+          child: ListTile(
+            title: const Text(
+                'Sous-total :                 XXX.XX DH \nFrais de Livraison :    XX.XX DH\n______________________________\nTotal :                           XXX.XX DH'),
           ),
         ),
       ],

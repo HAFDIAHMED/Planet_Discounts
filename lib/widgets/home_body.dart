@@ -55,13 +55,6 @@ class TousPdt extends StatelessWidget {
                 color: Color(0xFF3a3a3b),
                 fontWeight: FontWeight.w300),
           ),
-          /*Text(
-            "Voir Tout",
-            style: TextStyle(
-                fontSize: 16,
-                color: Colors.blue[400],
-                fontWeight: FontWeight.bold),
-          ),*/
           RichText(
             text: TextSpan(
               text: 'See All(54)',
