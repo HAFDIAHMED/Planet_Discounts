@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/semilac.dart';
-
+import '../models/paiement.dart';
 class Commande extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -145,7 +145,10 @@ class Commande extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         color: Colors.black)),
                 onPressed: () {
-                  showAlertDialog(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Payment()),
+                    ));
                 },
               ),
             ],
