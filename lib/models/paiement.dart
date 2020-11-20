@@ -46,10 +46,7 @@ class Payment extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   color: Colors.black)),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => SEMILAC()),
-            );
+            showAlertDialog(context);
           },
         ),
       ]),
