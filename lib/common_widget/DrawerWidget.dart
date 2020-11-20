@@ -13,6 +13,7 @@ import '../models/brand.dart';
 import '../models/Livraison.dart';
 import '../models/livraison_frais.dart';
 import '../models/paiement.dart';
+import '../common_widget/stepper.dart';
 
 class DrawerWidget extends StatefulWidget {
   @override
@@ -34,7 +35,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 text: 'Acceuil',
                 onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Payment()),
+                      MaterialPageRoute(builder: (context) => Tree()),
                     )),
             _createDrawerItem(
                 icon: Icons.category,

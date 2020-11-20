@@ -22,7 +22,7 @@ environment:
 
 dependencies:
   contactus: ^1.1.5
-
+  steppers: ^0.0.1
   carousel_pro: ^1.0.0
 
   stepper_touch: ^0.0.1
