@@ -71,17 +71,20 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Step> _mySteps() {
     List<Step> _steps = [
       Step(
-        title: Text('Informations'),
+        title: Text(
+          'Livraison',
+          style: TextStyle(fontSize: 10),
+        ),
         content: TextField(),
         isActive: _currentStep >= 0,
       ),
       Step(
-        title: Text('Livraison'),
+        title: Text('Paiement', style: TextStyle(fontSize: 10)),
         content: TextField(),
         isActive: _currentStep >= 1,
       ),
       Step(
-        title: Text('Facturation'),
+        title: Text('Résumé', style: TextStyle(fontSize: 10)),
         content: TextField(),
         isActive: _currentStep >= 2,
       )
