@@ -30,10 +30,6 @@ class CartPdt extends StatelessWidget {
               ListTile(
                 leading: CircleAvatar(
                   backgroundColor: Color(0xfffb5d04),
-                  /*child: Image.asset(
-                    'assets/images/EMiLac.jpg',
-                    width: 30,
-                  ),*/
                 ),
                 title: Text(name),
                 subtitle: Text('Total: \ ${(price * quantity)} DH'),

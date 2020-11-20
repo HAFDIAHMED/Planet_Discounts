@@ -4,21 +4,27 @@ import 'package:MYAPP/screens/cart_screen.dart';
 import '../models/cart.dart';
 import '../widgets/cart_item.dart';
 
-class Revision extends StatelessWidget {
+class Payment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<Cart>(context);
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color(0xfffb5d04),
-          title: Text(
-            'Paiemant',
-            style: TextStyle(fontSize: 30, color: Colors.black),
-          ),
+      appBar: AppBar(
+        backgroundColor: Color(0xfffb5d04),
+        title: Text(
+          'Paiemant',
+          style: TextStyle(fontSize: 30, color: Colors.black),
         ),
-        body: ListView(children: <Widget>[
-          Text("f"),
-          Text('f'),
-        ]));
+      ),
+      body: ListView.builder(
+          itemCount: cart.items.length,
+          itemBuilder: (ctx, i) => CartPdt(
+                cart.items.values.toList()[i].id,
+                cart.items.keys.toList()[i],
+                cart.items.values.toList()[i].price,
+                cart.items.values.toList()[i].quantity,
+                cart.items.values.toList()[i].name,
+              )),
+    );
   }
 }

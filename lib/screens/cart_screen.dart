@@ -60,16 +60,6 @@ class CartScreen extends StatelessWidget {
           ),
         ],
       ),
-      /*floatingActionButton: FloatingActionButton(
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => SEMILAC()),
-        ),
-        child: Icon(
-          Icons.home,
-          size: 30,
-        ),
-      ),*/
     );
   }
 }
