@@ -268,6 +268,7 @@ class DetailPage extends StatelessWidget {
             label: 'Acheter Maintenant',
             labelStyle: TextStyle(fontSize: 18.0),
             onTap: () => {
+              cart.addItem(productId, loadedPdt.name, loadedPdt.price),
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Commande()),

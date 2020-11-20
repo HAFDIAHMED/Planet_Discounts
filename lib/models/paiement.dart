@@ -30,6 +30,7 @@ class Payment extends StatelessWidget {
                     cart.items.values.toList()[i].name,
                   )),
         ),
+        Text("TOTAL aprés reduction:\ ${cart.totalAmount.toString()} DH"),
         FlatButton(
           shape: new RoundedRectangleBorder(
               borderRadius: new BorderRadius.only(
