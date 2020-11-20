@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:MYAPP/screens/cart_screen.dart';
 import '../models/cart.dart';
 import '../widgets/cart_item.dart';
+import '../screens/cart_item2.dart';
 
 class Payment extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class Payment extends StatelessWidget {
       ),
       body: ListView.builder(
           itemCount: cart.items.length,
-          itemBuilder: (ctx, i) => CartPdt(
+          itemBuilder: (ctx, i) => CartPdt2(
                 cart.items.values.toList()[i].id,
                 cart.items.keys.toList()[i],
                 cart.items.values.toList()[i].price,
