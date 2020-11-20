@@ -33,34 +33,37 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
         backgroundColor: Color(0xfffb5d04),
       ),
-      body: Stepper(
-        type: StepperType.horizontal,
-        steps: _mySteps(),
-        currentStep: this._currentStep,
-        onStepTapped: (step) {
-          setState(() {
-            this._currentStep = step;
-          });
-        },
-        onStepContinue: () {
-          setState(() {
-            if (this._currentStep < this._mySteps().length - 1) {
-              this._currentStep = this._currentStep + 1;
-            } else {
-              //Logic to check if everything is completed
-              //print('Completed, check fields.');
-            }
-          });
-        },
-        onStepCancel: () {
-          setState(() {
-            if (this._currentStep > 0) {
-              this._currentStep = this._currentStep - 1;
-            } else {
-              this._currentStep = 0;
-            }
-          });
-        },
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Stepper(
+          type: StepperType.horizontal,
+          steps: _mySteps(),
+          currentStep: this._currentStep,
+          onStepTapped: (step) {
+            setState(() {
+              this._currentStep = step;
+            });
+          },
+          onStepContinue: () {
+            setState(() {
+              if (this._currentStep < this._mySteps().length - 1) {
+                this._currentStep = this._currentStep + 1;
+              } else {
+                //Logic to check if everything is completed
+                //print('Completed, check fields.');
+              }
+            });
+          },
+          onStepCancel: () {
+            setState(() {
+              if (this._currentStep > 0) {
+                this._currentStep = this._currentStep - 1;
+              } else {
+                this._currentStep = 0;
+              }
+            });
+          },
+        ),
       ),
     );
   }
