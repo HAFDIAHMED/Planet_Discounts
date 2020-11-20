@@ -31,6 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
+        backgroundColor: Color(0xfffb5d04),
       ),
       body: Stepper(
         type: StepperType.horizontal,
